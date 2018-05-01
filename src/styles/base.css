@@ -1,0 +1,61 @@
+@import 'variables.css';
+
+:root {
+  --bodyBorder: 30px;
+  --bodyBackgroundColor: #fff2ed;
+  --bodyBorderColor: white;
+  --bodyBorderText: #d2b7c0;
+}
+
+body {
+  background: var(--bodyBackgroundColor);
+  font-family: var(--fontBase);
+  margin: 0;
+  padding: 2rem calc(var(--bodyBorder) + 2rem);
+}
+
+body::after {
+  content: '';
+  display: block;
+  border: var(--bodyBorder) solid var(--bodyBorderColor);
+  height: calc(100vh - var(--bodyBorder) * 2);
+  width: calc(100% - var(--bodyBorder) * 2);
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.borderDecor {
+  color: var(--bodyBorderText);
+  position: fixed;
+  z-index: 1;
+  text-align: center;
+  padding: 0.5rem;
+}
+
+.borderDecor-1 {
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.borderDecor-2 {
+  top: 48%;
+  left: 0;
+  right: calc(-100% + 1.75rem);
+  transform: rotate(90deg);
+}
+
+.borderDecor-3 {
+  transform: rotate(180deg);
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.borderDecor-4 {
+  top: 48%;
+  right: 0;
+  left: calc(-100% + 1.75rem);
+  transform: rotate(-90deg);
+}
