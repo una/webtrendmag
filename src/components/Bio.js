@@ -10,6 +10,8 @@ class Bio extends React.Component {
           src={profilePic}
           alt={`Kyle Mathews`}
         />
+        Info about this magazine here 
+        
         Written by <strong>Kyle Mathews</strong> who lives and works in San
         Francisco building useful things.{' '}
         <a href="https://twitter.com/kylemathews">

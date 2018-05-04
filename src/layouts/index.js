@@ -3,6 +3,9 @@ import Link from 'gatsby-link'
 import style from '../styles/main.css'
 
 class Template extends React.Component {
+  state = {
+    'title': 'Hello, World'
+  }
   render() {
     const { location, children } = this.props
     let header
@@ -25,10 +28,10 @@ class Template extends React.Component {
     }
     return (
       <div>
-        <div className="borderDecor borderDecor-1">Summer 2018 | MOTT</div>
-        <div className="borderDecor borderDecor-2">Summer 2018 | MOTT</div>
-        <div className="borderDecor borderDecor-3">Summer 2018 | MOTT</div>
-        <div className="borderDecor borderDecor-4">Summer 2018 | MOTT</div>
+        <div className="borderDecor borderDecor-1">Summer 2018 | Web Trend Magazine | MOTT</div>
+        <div className="borderDecor borderDecor-2">{this.state.title}</div>
+        <div className="borderDecor borderDecor-3">{this.state.title}</div>
+        <div className="borderDecor borderDecor-4">{this.state.title}</div>
         {header}
         {children()}
       </div>
