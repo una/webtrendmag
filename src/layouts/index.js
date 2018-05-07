@@ -8,31 +8,13 @@ class Template extends React.Component {
   }
   render() {
     const { location, children } = this.props
-    let header
-    if (location.pathname === '/') {
-      header = (
-        <h1>
-          <Link to={'/'} >
-            Gatsby Starter Blog
-          </Link>
-        </h1>
-      )
-    } else {
-      header = (
-        <h3>
-          <Link to={'/'}>
-            Gatsby Starter Blog
-          </Link>
-        </h3>
-      )
-    }
     return (
       <div>
         <div className="borderDecor borderDecor-1">Summer 2018 | Web Trend Magazine | MOTT</div>
         <div className="borderDecor borderDecor-2">{this.state.title}</div>
         <div className="borderDecor borderDecor-3">{this.state.title}</div>
         <div className="borderDecor borderDecor-4">{this.state.title}</div>
-        {header}
+        <h1 class="summer18--header">MOTT</h1>
         {children()}
       </div>
     )

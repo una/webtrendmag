@@ -1,4 +1,4 @@
-@import 'variables.css';
+@import './variables.css';
 
 :root {
   --bodyBorder: 30px;
@@ -9,7 +9,7 @@
 
 body {
   background: var(--bodyBackgroundColor);
-  font-family: var(--fontBase);
+  font-family: 'IBM Plex Mono', monospace;
   margin: 0;
   padding: 2rem calc(var(--bodyBorder) + 2rem);
 }

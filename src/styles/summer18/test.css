@@ -1,5 +1,7 @@
-.thing {
-    width: 300px;
-    height: 200px;
-    background: red;
+.bordered {
+  margin: 0 auto;
+  max-width: 500px;
+  padding: 3rem;
+  margin: 5rem auto;
+  border: 4px double red;
 }
