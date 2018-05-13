@@ -11,7 +11,7 @@ body {
   background: var(--bodyBackgroundColor);
   font-family: 'IBM Plex Mono', monospace;
   margin: 0;
-  padding: 2rem calc(var(--bodyBorder) + 2rem);
+  padding: 0;
 }
 
 body::after {

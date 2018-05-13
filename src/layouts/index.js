@@ -14,7 +14,7 @@ class Template extends React.Component {
         <div className="borderDecor borderDecor-2">{this.state.title}</div>
         <div className="borderDecor borderDecor-3">{this.state.title}</div>
         <div className="borderDecor borderDecor-4">{this.state.title}</div>
-        <h1 class="summer18--header">MOTT</h1>
+        <h1 className="summer18--header">MOTT</h1>
         {children()}
       </div>
     )
